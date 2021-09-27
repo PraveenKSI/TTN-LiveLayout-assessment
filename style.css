@@ -1,0 +1,185 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    /* border:1px solid black; */
+}
+header{
+    background-color: #c9bf2e;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.left-logo{
+    height: 50%;
+    padding-left: 10px;
+}
+.right-logo{
+    height: 20px;
+    padding-right: 10px;
+    /* border: 1px solid black; */
+}
+.login-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.login-container span{
+    font-size: 15px;
+    padding-right: 10px;
+}
+.signIn{
+    border-right: 1px solid black;
+    margin-right: 10px;
+}
+.hamburger{
+    display: none;
+}
+.fas{
+    padding:10px;
+}
+.hamburger-option{
+    display: none;
+}
+
+main{
+    background-image: url(asset/background-image.png);
+    display: flex;
+    background-color: skyblue;
+    min-height: 62vh;
+    background-size: 100% 120%;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+main div{
+    min-width: 300px;
+    padding: 20px;
+}
+.text-container h2{
+    width:260px;
+    padding-bottom: 10px;
+    color:blueviolet;
+}
+.test-btn{
+    background-color: tomato;
+    padding: 10px;
+    /* text-align: center; */
+    border: none;
+}
+
+.form-container{
+    padding-top: 20px;
+    background-color: white;
+    text-align: center;
+}
+.form-container h6{
+    color: red;
+}
+.form-container input[type="text"]{
+    margin:10px;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 90%;
+}
+.submit-btn{
+    background-color: green;
+    padding:10px 20px;
+    margin: 10px;
+    color: white;
+    border: none;
+}
+
+footer{
+    display: flex;
+    background-color:blueviolet;
+    color: white;
+    min-height: 30vh;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.review,.review-intro{
+    width: 234.75px;
+    padding-top: 10px;
+    margin: 10px;
+}
+.msg-icon{
+    background-color: tomato;
+    padding:10px;
+    border-radius: 100%;
+}
+.profile{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+}
+.profile-pic{
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
+
+@media (max-width:768px){
+    .login-container{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+    .hamburger-option{
+        color: white;
+        display: none;
+        padding-top: 10px;
+        text-align: center;
+        background-color: lightslategray;
+    }
+    .hamburger-option span{
+        display: inline-block;
+        width: 100%;
+        border-bottom: 1px solid black;
+        padding-bottom:10px;
+    }
+    main{
+        flex-direction: column;
+    }
+    main div{
+        min-width: 80vw;
+        margin:20px 0;
+        /* border:1px solid black; */
+        padding:0px;
+    }
+    .text-container{
+        /* border:1px solid black; */
+        text-align: center;
+    }
+    .text-container h2{
+        /* border:1px solid black; */
+        padding: 0 0 10px 0;
+        text-align: center;
+        max-width: 90%;
+        font-size: 0.9rem;
+    }
+    .test-btn{
+        font-size: 0.7rem;
+        margin: 0;
+    }
+    .form-container input[type="text"]{
+        width: 90%;
+    }
+    footer{
+        flex-direction: column;
+    }
+    footer div{
+        width: 80%;
+        padding-top: 10px;
+        margin: 10px;
+    }
+
+}
